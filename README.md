@@ -71,13 +71,13 @@ para publicação automática do preview a cada git push para main.
 ## 📸 Capturas de Ecrã
 
 ### 🌱 Lista de Plantas
-![Lista de Plantas](./screenshots/lista.png)
+![Lista de Plantas](screenshots/lista.png)
 
 ### 🌼 Detalhes da Planta
-![Detalhes da Planta](./screenshots/detalhes.png)
+![Detalhes da Planta](screenshots/detalhes.png)
 
 ### ➕ Adicionar Planta
-![Adicionar Planta](./screenshots/nova.png)
+![Adicionar Planta](screenshots/nova.png)
 
 👩‍💻 Autoria
 
