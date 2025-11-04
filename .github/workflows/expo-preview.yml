@@ -1,0 +1,33 @@
+name: Expo Preview
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar Expo CLI e dependências
+        run: |
+          npm install -g expo-cli
+          npm ci
+
+      - name: Publicar preview Expo
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: |
+          npx expo login --token $EXPO_TOKEN
+          npx expo prebuild || echo "sem prebuild necessário"
+          npx expo publish --non-interactive --release-channel preview
+        
