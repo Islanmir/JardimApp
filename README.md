@@ -35,7 +35,7 @@ Ou lê este QR Code com a app **Expo Go** no teu telemóvel:
 ## ⚙️ Instalação (modo local)
 
 ### 1️⃣ Clonar o repositório
-```bash
+bash
 git clone https://github.com/teu-usuario/ProjetoPlantas.git
 cd ProjetoPlantas/JardimApp
 2️⃣ Instalar dependências
@@ -68,9 +68,16 @@ para publicação automática do preview a cada git push para main.
 - name: 🚀 Publicar preview com EAS Update
   run: eas update --auto --branch preview --message "Atualização automática"
 
-| Lista de Plantas                             | Detalhes da Planta                                | Adicionar Planta                       |
-| -------------------------------------------- | ------------------------------------------------- | -------------------------------------- |
-| ![Lista de Plantas](./screenshots/lista.png) | ![Detalhes da Planta](./screenshots/detalhes.png) | ![Nova Planta](./screenshots/nova.png) |
+## 📸 Capturas de Ecrã
+
+### 🌱 Lista de Plantas
+![Lista de Plantas](https://github.com/islanmir/JardimApp/blob/main/screenshots/lista.png?raw=true)
+
+### 🌼 Detalhes da Planta
+![Detalhes da Planta](https://github.com/islanmir/JardimApp/blob/main/screenshots/detalhes.png?raw=true)
+
+### ➕ Adicionar Planta
+![Adicionar Planta](https://github.com/islanmir/JardimApp/blob/main/screenshots/nova.png?raw=true)
 
 
 👩‍💻 Autoria
