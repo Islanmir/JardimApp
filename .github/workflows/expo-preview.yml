@@ -9,6 +9,10 @@ on:
 jobs:
   preview:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: JardimApp   # 👈 adiciona esta linha
+
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
@@ -30,4 +34,3 @@ jobs:
           npx expo login --token $EXPO_TOKEN
           npx expo prebuild || echo "sem prebuild necessário"
           npx expo publish --non-interactive --release-channel preview
-        
