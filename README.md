@@ -35,7 +35,7 @@ Ou lê este QR Code com a app **Expo Go** no teu telemóvel:
 ## ⚙️ Instalação (modo local)
 
 ### 1️⃣ Clonar o repositório
-```bash
+bash
 git clone https://github.com/teu-usuario/ProjetoPlantas.git
 cd ProjetoPlantas/JardimApp
 2️⃣ Instalar dependências
