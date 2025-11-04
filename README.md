@@ -68,10 +68,16 @@ para publicação automática do preview a cada git push para main.
 - name: 🚀 Publicar preview com EAS Update
   run: eas update --auto --branch preview --message "Atualização automática"
 
-| Lista de Plantas                             | Detalhes da Planta                                | Adicionar Planta                       |
-| -------------------------------------------- | ------------------------------------------------- | -------------------------------------- |
-| ![Lista de Plantas](./screenshots/lista.png) | ![Detalhes da Planta](./screenshots/detalhes.png) | ![Nova Planta](./screenshots/nova.png) |
+## 📸 Capturas de Ecrã
 
+### 🌱 Lista de Plantas
+![Lista de Plantas](./screenshots/lista.png)
+
+### 🌼 Detalhes da Planta
+![Detalhes da Planta](./screenshots/detalhes.png)
+
+### ➕ Adicionar Planta
+![Adicionar Planta](./screenshots/nova.png)
 
 👩‍💻 Autoria
 
