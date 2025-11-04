@@ -1,0 +1,6 @@
+@JardimAPI_HostAddress = http://localhost:5081
+
+GET {{JardimAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
