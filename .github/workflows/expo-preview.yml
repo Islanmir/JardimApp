@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: JardimApp   # 👈 altera se a tua pasta tiver outro nome
+        working-directory: JardimApp   # 👈 nome da tua pasta
 
     steps:
       - name: 📦 Checkout código
@@ -27,12 +27,15 @@ jobs:
           npm install -g eas-cli
           npm install
 
-      - name: 🚀 Publicar preview Expo (EAS)
+      - name: 🚀 Publicar preview com EAS Update
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
           CI: true
         run: |
-          eas whoami || echo "A autenticar com token..."
-          eas update --auto --branch preview --message "Atualização automática"
+          echo "🔑 Autenticar com token..."
+          eas whoami || echo "Usar token armazenado no GitHub Secrets"
+          echo "🚀 A enviar update para canal preview..."
+          eas update --auto --branch preview --message "Atualização automática via GitHub Actions"
+
 
 

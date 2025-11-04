@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JardimAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc9d508550559a7381fe99827a42d98498ce8d98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e2eb8852ae80ad6ae119bef0d06de68e8dae88b")]
 [assembly: System.Reflection.AssemblyProductAttribute("JardimAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JardimAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
