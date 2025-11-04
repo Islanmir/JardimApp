@@ -79,6 +79,7 @@ para publicação automática do preview a cada git push para main.
 ### ➕ Adicionar Planta
 ![Adicionar Planta](https://github.com/islanmir/JardimApp/blob/main/screenshots/nova.png?raw=true)
 
+
 👩‍💻 Autoria
 
 Raquel Monteiro
