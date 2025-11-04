@@ -11,26 +11,27 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: JardimApp   # 👈 adiciona esta linha
+        working-directory: JardimApp   # 👈 altera se a tua pasta tiver outro nome
 
     steps:
-      - name: Checkout código
+      - name: 📦 Checkout código
         uses: actions/checkout@v4
 
-      - name: Instalar Node.js
+      - name: ⚙️ Instalar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Instalar Expo CLI e dependências
+      - name: 📲 Instalar Expo CLI e dependências
         run: |
           npm install -g expo-cli
           npm install
 
-      - name: Publicar preview Expo
+      - name: 🚀 Publicar preview Expo
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         run: |
-          npx expo login --token $EXPO_TOKEN
-          npx expo prebuild || echo "sem prebuild necessário"
+          export EXPO_TOKEN=${{ secrets.EXPO_TOKEN }}
+          npx expo whoami || echo "Autenticando com token..."
           npx expo publish --non-interactive --release-channel preview
+
