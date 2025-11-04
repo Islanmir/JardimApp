@@ -1,4 +1,4 @@
-name: Expo Preview
+name: Expo EAS Preview
 
 on:
   push:
@@ -22,16 +22,17 @@ jobs:
         with:
           node-version: 20
 
-      - name: 📲 Instalar Expo CLI e dependências
+      - name: 📲 Instalar EAS CLI e dependências
         run: |
-          npm install -g expo-cli
+          npm install -g eas-cli
           npm install
 
-      - name: 🚀 Publicar preview Expo
+      - name: 🚀 Publicar preview Expo (EAS)
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          CI: true
         run: |
-          export EXPO_TOKEN=${{ secrets.EXPO_TOKEN }}
-          npx expo whoami || echo "Autenticando com token..."
-          npx expo publish --non-interactive --release-channel preview
+          eas whoami || echo "A autenticar com token..."
+          eas update --auto --branch preview --message "Atualização automática"
+
 
