@@ -24,7 +24,7 @@ function ListaPlantas({ navigation }) {
   const [loading, setLoading] = useState(true);
   const insets = useSafeAreaInsets();
 
-  const API_URL = "http://192.168.1.226:5081/api/Plantas";
+  const API_URL = "http://192.168.x.xxx:5081/api/Plantas";
 
   const carregarPlantas = async () => {
     try {

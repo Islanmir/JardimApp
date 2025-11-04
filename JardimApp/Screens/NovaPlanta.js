@@ -18,7 +18,7 @@ export default function NovaPlanta({ navigation }) {
   const [descricao, setDescricao] = useState("");
   const [imagemUrl, setImagemUrl] = useState("");
 
-  const API_URL = "http://192.168.1.226:5081/api/Plantas";
+  const API_URL = "http://192.168.x.xxx:5081/api/Plantas";
 
   const guardarPlanta = async () => {
     if (!nome.trim()) {
