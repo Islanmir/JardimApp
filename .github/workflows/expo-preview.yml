@@ -21,7 +21,7 @@ jobs:
       - name: Instalar Expo CLI e dependências
         run: |
           npm install -g expo-cli
-          npm ci
+          npm install
 
       - name: Publicar preview Expo
         env:
