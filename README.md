@@ -71,13 +71,13 @@ para publicação automática do preview a cada git push para main.
 ## 📸 Capturas de Ecrã
 
 ### 🌱 Lista de Plantas
-![Lista de Plantas](screenshots/lista.png)
+![Lista de Plantas](https://github.com/islanmir/JardimApp/blob/main/screenshots/lista.png?raw=true)
 
 ### 🌼 Detalhes da Planta
-![Detalhes da Planta](screenshots/detalhes.png)
+![Detalhes da Planta](https://github.com/islanmir/JardimApp/blob/main/screenshots/detalhes.png?raw=true)
 
 ### ➕ Adicionar Planta
-![Adicionar Planta](screenshots/nova.png)
+![Adicionar Planta](https://github.com/islanmir/JardimApp/blob/main/screenshots/nova.png?raw=true)
 
 👩‍💻 Autoria
 
